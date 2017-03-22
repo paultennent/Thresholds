@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class AutoClientScript : MonoBehaviour {
 
-    public string fallbackIP = "192.168.1.109";
+    public string fallbackIP = "192.168.1.200";
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +13,7 @@ public class AutoClientScript : MonoBehaviour {
         nm.networkAddress = readIPData("serverip.txt");
         nm.networkPort = 7777;
         nm.StartClient();
+		print ("Net Manager Started");
 	}
 	
 	// Update is called once per frame

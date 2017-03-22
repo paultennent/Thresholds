@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/topdown.unity
   - enabled: 1
-    path: Assets/Scenes/multiplayertest.unity
+    path: Assets/Scenes/ClientRoom.unity
   - enabled: 0
-    path: Assets/Scenes/clientsim.unity
+    path: Assets/Scenes/ServerRoom.unity
+  - enabled: 0
+    path: Assets/Scenes/ClientRoom-Simulator.unity

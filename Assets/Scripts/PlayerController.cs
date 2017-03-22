@@ -36,12 +36,13 @@ public class PlayerController : NetworkBehaviour
             foundCam = true;
 
             //turn off the renderers for ourself
-            GetComponent<ChildKiller>().killChildren();
+            GetComponent<AvatarKiller>().killChildren();
         }
         else
         {
             //if we're not, we need to be higher up
-            transform.position = new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z);
+			Transform spawn = GameObject.FindGameObjectWithTag("Respawn").transform;
+            transform.position = new Vector3(spawn.position.x, spawn.position.y + 1.65f, spawn.position.z);
         }
     }
 }
